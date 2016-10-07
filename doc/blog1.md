@@ -29,6 +29,8 @@ Because we've installed the `react-native-webrtc` native module, we need to link
 
 `react-native link`
 
+You'll also need to follow a few additional installation instructions for [Android](https://github.com/oney/react-native-webrtc/blob/master/Documentation/AndroidInstallation.md) or [iOS](https://github.com/oney/react-native-webrtc/blob/master/Documentation/iOSInstallation.md). Some of these steps were already performed via `react-native link`, but others (modifying the Android manifest, for instance) were not.
+
 ## Simplify Initial Code
 
 Since none of this code is platform-specific, let's modify the current code such that `index.android.js` and `index.ios.js` load the default component from `ui.js`. Place the following in `ui.js`:
