@@ -49,7 +49,7 @@ export default class extends Component {
     }
     MediaStreamTrack.getSources((sources) => {
       const source = sources.find((s) => s.kind == "video")
-      const constraints = {audio: true, video: {mandatory: [{sourceId: source.id}], optional: [{sourceId: source.id}]}}
+      const constraints = {audio: true, video: {optional: [{sourceId: source.id}]}}
       getUserMedia(constraints, getUserMediaSuccess, console.error)
     })
   }
